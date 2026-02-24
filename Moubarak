@@ -1,0 +1,81 @@
+Create a complete e-commerce web application called "ShopFlow" with the following specifications:
+
+### BRAND & DESIGN
+- Name: ShopFlow
+- Style: Modern glassmorphism with purple-blue gradients (#667eea to #764ba2)
+- Font: Inter (Google Fonts)
+- Background: Animated gradient blobs (purple, blue, pink) with blur effects
+- Cards: White/transparent with backdrop-blur, rounded-2xl, shadow-lg
+- Buttons: Rounded-full, gradient backgrounds, hover:scale-105 transitions
+
+### PRODUCT CATALOG
+Display 8 products in a responsive grid (1 col mobile, 2 cols tablet, 4 cols desktop):
+
+1. Casque Audio  - 299€ - Tech - https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400
+2. Montre Connectée Pro - 449€ - Tech - https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400
+3. Sac à Dos Urban - 89€ - Fashion - https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400
+4. Baskets Sport Air - 159€ - Fashion - https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400
+5. Appareil Photo Instantané - 129€ - Tech - https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400
+6. Lampe Design Minimaliste - 79€ - Home - https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=400
+7. Cafetière Italienne - 45€ - Home - https://images.unsplash.com/photo-1517080319804-137d2475d01f?w=400
+8. Crème Hydratante Bio - 34€ - Beauty - https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400
+
+Each product card shows: image, category badge, rating with star icon, name, price, and add-to-cart button.
+
+### FILTERING & SEARCH
+- Category filter buttons: All, Tech, Fashion, Home, Beauty (pill-shaped, active state highlighted)
+- Real-time search bar in header (filters products instantly)
+
+### SHOPPING CART
+- Slide-out sidebar from right (fixed position, full height)
+- List items with thumbnail, name, price, quantity controls (+/-), remove button
+- Total price calculation at bottom
+- "Checkout" button opens payment modal
+- Cart icon in header with item count badge (animated bounce on add)
+
+### PAYMENT SYSTEM (3 options)
+
+**Option 1: Mobile Money (Primary)**
+- Operator selection: MTN Mobile Money (yellow #FFCC00), Orange Money (orange #FF6600), Wave (blue #00B4DB)
+- Phone number input with country code detection
+- PIN validation simulation (4-6 digits)
+- Processing animation (3 seconds)
+- Success confirmation with checkmark animation
+
+**Option 2: Credit Card**
+- Card number input with formatting
+- Expiry date and CVC fields
+- Pay button with amount display
+
+**Option 3: Cash on Delivery**
+- Confirmation message
+- Order summary
+
+### INTERACTIONS & ANIMATIONS
+- Product cards: lift up + shadow increase on hover
+- Add to cart: button scale animation + toast notification "Product added!"
+- Cart sidebar: smooth slide transition (300ms ease-out)
+- Page load: staggered fade-in animation for products
+- Background: slowly floating gradient orbs (continuous animation)
+
+### TECHNICAL REQUIREMENTS
+- React with TypeScript
+- Tailwind CSS for styling
+- Lucide React for icons (ShoppingCart, Star, Plus, Minus, X, Check, Smartphone, CreditCard)
+- useState for cart management and UI state
+- Framer Motion for smooth animations
+- Fully responsive (mobile-first)
+
+### COMPONENTS STRUCTURE
+- Header: logo, search bar, cart icon with badge
+- Hero: title with gradient text, subtitle
+- FilterBar: category pills
+- ProductGrid: responsive grid of ProductCards
+- ProductCard: image, info, add button
+- CartSidebar: overlay + slide panel
+- CheckoutModal: payment method selection + forms
+- Toast: notification system
+
+### DELIVERABLE
+Single-file React application (App.tsx) that can be exported and deployed to Netlify/Vercel immediately.
+Moubarak 
